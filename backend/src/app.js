@@ -16,7 +16,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5173', // local dev
-    'https://personal-finance-tracker.vercel.app' // frontend production
+    'https://personal-finance-tracker-nine-beta.vercel.app' // frontend production
   ],
   credentials: true
 }));
