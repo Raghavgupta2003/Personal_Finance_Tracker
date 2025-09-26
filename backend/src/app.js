@@ -9,10 +9,18 @@ const analyticsRoutes = require('./routes/analyticsRoutes');
 
 const app = express();
 
+// app.use(cors({
+//   origin: '*',
+//   credentials: true
+// }));
 app.use(cors({
-  origin: '*',
+  origin: [
+    'http://localhost:5173', // local dev
+    'https://personal-finance-tracker.vercel.app' // frontend production
+  ],
   credentials: true
 }));
+
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
