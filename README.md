@@ -54,7 +54,7 @@ cd backend
 npm install
 ```
 
-Create a `.env` file in the `backend` folder:
+Create a `.env` file in the `backend` folder with the following variables:
 
 ```env
 DB_HOST=your_db_host
@@ -67,6 +67,11 @@ REDIS_HOST=your_redis_host
 REDIS_PORT=your_redis_port
 REDIS_PASSWORD=your_redis_password
 ```
+
+> **Note:** You can use free services to set up your backend:
+>
+> * MySQL: [https://www.freesqldatabase.com/](https://www.freesqldatabase.com/)
+> * Redis Cloud: [https://cloud.redis.io/](https://cloud.redis.io/)
 
 Start the backend server:
 
